@@ -3,59 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MANACO - Calzado que impulsa tu paso</title>
-    <meta name="description" content="Landing de MANACO: calzado boliviano de calidad para mujer y hombre. Descubre zapatillas, tacones y zapatos formales con envío rápido y garantía.">
 
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="MANACO – Calzado que impulsa tu paso">
-    <meta property="og:description" content="Calzado boliviano de calidad: zapatillas, tacones y zapatos formales. Envío rápido y garantía.">
-    <meta property="og:image" content="og-placeholder.jpg">
-    
-    <style>
-        .skip-link {
-        position: absolute;
-        top: -40px;
-        left: 0;
-        background: #000;
-        color: #fff;
-        padding: 8px;
-        z-index: 100;
-        }
-        .skip-link:focus {
-        top: 0;
-        }
+  <title>MANACO – Calzado que impulsa tu paso</title>
 
-        a:focus, button:focus {
-        outline: 3px solid red;
-        outline-offset: 2px;
-        }
-    </style>
+  <meta name="description" content="Landing de MANACO: calzado boliviano de calidad para mujer y hombre. Descubre zapatillas, tacones y zapatos formales con envío rápido y garantía.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MANACO – Calzado que impulsa tu paso">
+  <meta property="og:description" content="Calzado boliviano de calidad: zapatillas, tacones y zapatos formales. Envío rápido y garantía.">
+  <meta property="og:image" content="og-placeholder.jpg">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <a href="#main" class="skip-link">Saltar al contenido</a>
+
   <header>
-    <nav aria-label="Menú principal">
-      <ul>
+    <h1>MANACO</h1>
+    <nav aria-label="Menú principal" class="nav">
+      <button class="nav-toggle" aria-label="Abrir menú">☰</button>
+      <ul class="nav-menu">
         <li><a href="#">Inicio</a></li>
         <li><a href="#">Servicios</a></li>
         <li><a href="#">Contacto</a></li>
       </ul>
     </nav>
-    <h1>MANACO</h1>
   </header>
 
   <main id="main">
-    <section aria-labelledby="banner">
-      <h2 id="banner">Calzado que impulsa tu paso</h2>
+    <section id="banner">
+      <h2>Calzado que impulsa tu paso</h2>
     </section>
 
-    <section aria-labelledby="productos">
-      <h2 id="productos">Productos</h2>
+    <section id="productos">
+      <h2>Productos</h2>
       <ul>
         <li>
           <article>
             <figure>
-              <img src="../primerexamen-alejandra-terceros/p1.jpg" alt="Zapatilla Modelo Rojo">
+              <img src="p1.jpg" alt="Zapatilla Modelo Rojo">
             </figure>
             <h3>Zapatilla casual</h3>
             <p>Bs.150</p>
@@ -65,17 +50,17 @@
         <li>
           <article>
             <figure>
-              <img src="../primerexamen-alejandra-terceros/p2.jpg" alt="Tacon Modelo Negro">
+              <img src="p2.jpg" alt="Tacón Modelo Negro">
             </figure>
-            <h3>Tacon punta alfiler</h3>
-            <p>Bs 250</p>
+            <h3>Tacón punta alfiler</h3>
+            <p>Bs.250</p>
             <button>Comprar</button>
           </article>
         </li>
         <li>
           <article>
             <figure>
-              <img src="../primerexamen-alejandra-terceros/p3.jpg" alt="Zapato formal cuerco cafe">
+              <img src="p3.jpg" alt="Zapato formal cuero café">
             </figure>
             <h3>Zapato formal</h3>
             <p>Bs.180</p>
@@ -89,5 +74,7 @@
   <footer>
     <p>Copyright 2025 MANACO</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
