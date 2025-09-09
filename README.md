@@ -12,3 +12,11 @@ Aqui desarrollare una pagina responsiva y accesible para la empresa espero que s
 - Inclui **textos alternativos descriptivos** en las imagenes de los productos, para que los lectores de pantalla transmitan mejor la informacion  
 - Use **atributos aria-label** en la barra de navegacion para que su funcion quede clara a las tecnologias de asistencia  
 - Probe la pagina usando solo el teclado (Tab, Enter) para comprobar que la navegacion sea fluida  
+
+
+## SEO
+- **Titulo unico y descriptivo:** “MANACO – Calzado que impulsa tu paso” para reforzar marca + propuesta de valor.
+- **Meta description (~155 caracteres):** resume catálogo (zapatillas, tacones, formales) y beneficios (envío, garantía) para mejorar CTR en SERP.
+- **Etiquetas Open Graph:** `og:title`, `og:description`, `og:image` (1200×630) para vista previa correcta al compartir en redes.
+- **Jerarquía de encabezados:** un solo `H1` (marca) y `H2` para secciones clave (banner y productos) para claridad semántica.
+- **Imágenes optimizadas:** alt descriptivos ya añadidos; se recomendó usar un placeholder ligero para OG y optimizar peso para performance.
