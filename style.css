@@ -1,17 +1,21 @@
-/* Estilos generales */
+/* ====== ESTILOS BASE (MÓVIL PRIMERO) ====== */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
+/* Header */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: rgb(255, 0, 0);
   padding: 10px 15px;
-  color: rgb(254, 254, 254);
+  color: white;
+  border: 2px solid #333;
+  margin: 10px;
+  border-radius: 6px;
 }
 
 header h1 {
@@ -21,19 +25,22 @@ header h1 {
 .nav-toggle {
   background: none;
   border: none;
-  color: rgb(255, 255, 255);
+  color: white;
   font-size: 1.8rem;
   cursor: pointer;
 }
+
 .nav-menu {
   display: none;
   list-style: none;
   margin: 0;
   padding: 0;
 }
+
 .nav-menu li {
   margin: 10px 0;
 }
+
 .nav-menu a {
   color: white;
   text-decoration: none;
@@ -44,6 +51,7 @@ header h1 {
   display: block;
 }
 
+/* Accesibilidad */
 .skip-link {
   position: absolute;
   top: -40px;
@@ -61,131 +69,152 @@ a:focus, button:focus {
   outline: 2px solid #0066cc;
   outline-offset: 2px;
 }
+
 /* Banner oculto en móvil */
-section#banner {
+#banner {
   display: none;
-}
-
-/* Productos en tarjetas */
-#productos ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-#productos li {
-  margin: 10px;
-}
-
-#productos article {
-  border: 2px solid #ffffff00;
-  border-radius: 8px;
-  padding: 15px;
-  text-align: center;
-  background: #fff;
-}
-
-/* Imagenes dentro de las cards */
-#productos img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  border: 1px solid #ccc; 
-}
-
-/* Botón más parecido a un esquema clásico */
-#productos button {
-  display: block;
-  width: 120px;    
-  padding: 12px;      
-  font-size: 1rem;    
-  text-align: center;
-}
-
-#productos button:hover {
-  background: #004c99;
-}
-
-/* Footer azul en móvil */
-footer {
-  text-align: center;
-  color: blue;
-  padding: 15px;
-}
-
-@media (min-width: 600px) {
-  /* Banner visible en desktop */
-  section#banner {
-    display: block;
-    text-align: center;
-    padding: 40px;
-    background: #f2f2f2;
-  }
-
-  header {
-    background: white;
-    color: black;
-  }
-
-  .nav-toggle {
-    display: none;
-  }
-
-  .nav-menu {
-    display: flex;
-    gap: 20px;
-  }
-
-  .nav-menu a {
-    color: black;
-  }
-
-  /* Productos en 3 columnas */
-  #productos ul {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-  }
-
-  /* Layout horizontal en móvil */
-    #productos li {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    }
-
-    #productos article {
-    flex: 1;
-    text-align: left;
-    }
-
-    #productos img {
-    width: 100%;
-    height: auto;
-    border: none;
-    border-radius: 6px 6px 0 0; 
-    }
-
-    /* Botón ancho debajo del contenido */
-    #productos button {
-    display: block;
-    width: 100%;
-    padding: 14px;
-    font-size: 1rem;
-    margin-top: 10px;
-    border-radius: 0 0 6px 6px; 
-    }
-
-  /* Footer normal */
-  footer {
-    color: black;
-  }
-}
-/* Borde general para secciones principales */
-header, #banner, footer {
+  font-size: 2rem;
   border: 2px solid #333;
   margin: 10px;
   padding: 10px;
   border-radius: 6px;
+}
+
+/* Productos en móvil (versión esquema) */
+#productos ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+#productos li {
+  margin: 0;
+}
+
+#productos article {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  gap: 10px;
+}
+
+/* Imagen a la izquierda */
+#productos img {
+  width: 80px;
+  height: auto;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* Texto en medio */
+#productos h3,
+#productos p {
+  margin: 0;
+  
+}
+#productos h3 {
+  font-size: 1rem;
+}
+#productos p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Botón a la derecha */
+#productos button {
+  width: auto;
+  padding: 8px 14px;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: #f5f5f5;
+  cursor: pointer;
+}
+#productos button:hover {
+  background: #006bd6;
+  color: white;
+}
+
+/* Footer móvil */
+footer {
+  text-align: center;
+  color: blue;
+  padding: 15px;
+  border: 2px solid #333;
+  margin: 10px;
+  border-radius: 6px;
+}
+
+/* ====== DESKTOP (>=600px) ====== */
+@media (min-width: 600px) {
+  /* Header */
+  header {
+    background: white;
+    color: black;
+  }
+  .nav-toggle {
+    display: none;
+  }
+  .nav-menu {
+    display: flex;
+    gap: 20px;
+  }
+  .nav-menu a {
+    color: black;
+  }
+
+  /* Banner visible */
+  #banner {
+    display: block;
+    text-align: center;
+    padding: 40px;
+    background: #e5e5e5;
+  }
+
+  /* Productos en 3 columnas */
+  #productos ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px; /* más espacio entre cards */
+    justify-content: center;
+  }
+
+  #productos li {
+    flex: 1 1 250px;
+    max-width: 300px;
+  }
+
+  #productos article {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    padding: 15px;
+  }
+
+  #productos img {
+    width: 100%;
+    border-radius: 6px 6px 0 0;
+    border: none;
+  }
+
+  #productos button {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 0 0 6px 6px;
+    background: #e5e5e5;
+  }
+
+  /* Footer más destacado */
+  footer {
+    color: rgb(45, 17, 255);
+    font-size: 2rem;
+  }
 }
 
